@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Curation and Tagging</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>News Curation and Tagging</h1>
+        </header>
+        <div class="controls">
+            <div class="control">
+                <div id="tag-buttons">
+                    {% for tag in tags %}
+                        <button class="tag-button" data-tag="{{ tag }}">{{ tag }}</button>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div id="news-container"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
