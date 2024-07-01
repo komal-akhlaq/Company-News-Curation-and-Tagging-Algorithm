@@ -5,8 +5,8 @@ import openai
 app = Flask(__name__)
 
 # Constants
-API_KEY_GPT = 'sk-proj-d9qB0TG9mcfGkXXE7eFKT3BlbkFJKUIN3AwxO3FrvuhinjBP'
-API_KEY_NEWS = 'hdy1tiwQG2ct7YeB7RFZx06hywk9seeFEpIFK01B'
+API_KEY_GPT = '<ur-api-key>'
+API_KEY_NEWS = '<ur-api-key>'
 BASE_URL = 'https://api.thenewsapi.com/v1/news/top'
 COMPANIES = ["Apple Inc.", "LinkedIn", "Tesla"]
 TAGS = ["CXO News", "Cybersecurity", "AI", "Finance", "Tech"]
